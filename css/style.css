@@ -1,4 +1,120 @@
-body {
-    background: #d2d2f2;
-    color: #fff;
+.registration-link {
+    text-align: center;
+    margin: 60px 0;
+}
+
+.registration-btn {
+    background: #46A358;
+    color: white;
+    padding: 14px 30px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.registration-btn:hover {
+    background: #3d8e4c;
+}
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5f5f5;
+}
+
+.box {
+    background: white;
+    width: 420px;
+    padding: 40px;
+    border-radius: 6px;
+    border-bottom: 10px solid #46A358;
+    position: relative;
+
+}
+
+.close-btn {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    border: none;
+    background: none;
+    font-size: 24px;
+    color: #46A358;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.tabs {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.active {
+    color: #46A358;
+}
+
+.divider {
+    margin: 0 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #777;
+    margin: 20px 0 30px;
+}
+
+.form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.password-field {
+    position: relative;
+}
+
+.password-field .eye {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    opacity: 0.6;
+}
+
+.register-submit {
+    width: 100%;
+    padding: 12px;
+    background: #46A358;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+.divider {
+    text-align: center;
+    margin: 25px 0;
+    color: #888;
+}
+
+.social-btn {
+    width: 100%;
+    border: 1px solid #e5e5e5;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
 }

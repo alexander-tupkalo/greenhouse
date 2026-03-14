@@ -8,31 +8,61 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-        <header class="header">
-            <div class="container header-flex">
-                <div class="logo">
-                    <img src="images/logo.png" alt="Greenshop">
+        <div class="wrapper">
+        
+            <div class="box">
+        
+                <a href="index.html" class="close-btn">
+                    ×
+                </a>
+        
+                <div class="tabs">
+                    <span>Login</span>
+                    <span class="divider">|</span>
+                    <span class="active">Register</span>
+                </div>
+        
+                <p class="subtitle">
+                    Enter your email and password to register.
+                </p>
+        
+                <form class="form">
+        
+                    <input type="text" placeholder="Username">
+        
+                    <input type="email" placeholder="Enter your email address">
+        
+                    <div class="password-field">
+                        <input type="password" placeholder="Password">
+                        <img src="images/hide.png" alt="">
+                    </div>
+        
+                    <input type="password" placeholder="Confirm Password">
+        
+                    <button class="register-submit">
+                        Register
+                    </button>
+        
+                </form>
+        
+                <p class="divider">Or register with</p>
+        
+                <div class="social-auth">
+        
+                    <button class="social-btn">
+                        <img src="images/google.svg">
+                        Continue with Google
+                    </button>
+        
+                    <button class="social-btn">
+                        <img src="images/facebook.svg">
+                        Continue with Facebook
+                    </button>
         
                 </div>
-                <nav class="nav">
-                    <a href="#" class="active">Home</a>
-                    <a href="#">Shop</a>
-                    <a href="#">Plant Care</a>
-                    <a href="#">Blogs</a>
-                </nav>
-                <div class="header-actions">
-                    <button class="search-btn">
-                        <img src="images/search.png" alt="search">
-                    </button>
-                    <button class="basket-btn">
-                        <img src="images/basket.png" alt="basket">
-                    </button>
-                    <button class="login-btn">
-                        Login
-                    </button>
-                </div>
+        
             </div>
         
-        </header>
+        </div>
 </body>
 </html>
