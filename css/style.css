@@ -1,5 +1,29 @@
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Cera Pro', sans-serif;
     margin: 0;
     padding: 20px;
 }
@@ -20,6 +44,7 @@ body {
     display: inline-block;
     vertical-align: middle;
     font-size: 16px;
+    font-weight: 400;
 }
 
 .logo {
@@ -93,7 +118,7 @@ body {
 }
 
 .image-box {
-    width: 50%;
+    width: 50%; 
     text-align: center;
 }
 
@@ -105,8 +130,8 @@ body {
 
 /* Text */
 h1 {
-    font-size: 48px;
-    font-weight: 600;
+    font-size: 70px;
+    font-weight: 900;
     margin: 10px 0;
     line-height: 1.1;
 }
@@ -117,8 +142,8 @@ h1 span {
 
 .sub {
     color: #3d3d3d;
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 16px;
+    font-weight: 500;
     letter-spacing: 2px;
     margin-bottom: 0;
 }
@@ -139,7 +164,7 @@ h1 span {
     text-decoration: none;
     border: none;
     cursor: pointer;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 16px;
 }
 
@@ -150,6 +175,193 @@ h1 span {
 button {
     font-family: inherit;
 }
+
+.shop {
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+    width: 250px;
+    float: left;
+}
+
+.sidebar h3 {
+    margin-bottom: 15px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin: 10px 0;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #3d3d3d;
+    display: block;
+    transition: 0.3s;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.sidebar a:hover {
+    color: #46A358;
+}
+
+.sidebar a.active {
+    color: #46A358;
+    font-weight: bold;
+}
+
+.sale img {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* ===== PRODUCTS ===== */
+.products {
+    width: 900px;
+    float: right;
+}
+
+.products-header {
+    margin-bottom: 20px;
+}
+
+.tabs {
+    float: left;
+    
+}
+
+.tabs a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #3d3d3d;
+}
+
+.tabs a.active {
+    color: #46A358;
+    border-bottom: 2px solid #46A358;
+}
+
+.tabs a:hover {
+    color: #46A358;
+}
+
+.sort {
+    float: right;
+    font-size: 14px;
+    color: #727272;
+}
+
+.select-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.select-wrapper select {
+    appearance: none;
+    border: none;
+    background: transparent;
+    font-size: 14px;
+    cursor: pointer;
+    padding-right: 20px;
+}
+
+.select-wrapper .arrow {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+
+    pointer-events: none;
+}
+
+
+
+/* очистка */
+.products-header::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* ===== CARDS ===== */
+.product-list {
+    font-size: 0;
+}
+
+.card {
+    width: 30%;
+    display: inline-block;
+    margin: 1.5%;
+    background: #fbfbfb;
+    text-align: center;
+    font-size: 16px;
+    padding: 15px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card p {
+    margin: 10px 0 5px;
+}
+
+.card span {
+    color: #46A358;
+    font-weight: bold;
+}
+
+/* ===== PAGINATION ===== */
+.pagination {
+    text-align: right;
+    margin-top: 30px;
+}
+
+.pagination a {
+    display: inline-block;
+    margin-left: 5px;
+    padding: 6px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.pagination a.active {
+    background: #46A358;
+    color: white;
+    border-color: #46A358;
+}
+
+.pagination a:hover {
+    border-color: #46A358;
+    color: #46A358;
+}
+
+
 
 /*-------------------------------*/
 .registration-link {
@@ -163,7 +375,7 @@ button {
     padding: 14px 30px;
     border-radius: 6px;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 500;
     display: inline-block;
 }
 
@@ -201,10 +413,10 @@ button {
     text-decoration: none;
 }
 
-.tabs {
+.switcher {
     text-align: center;
     font-size: 22px;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .active {
