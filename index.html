@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Greenhouse</title>
     <link rel="stylesheet" href="css/reset.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -33,18 +32,79 @@
         <section class="hero">
           <div class="content">
               <p class="sub">WELCOME TO GREENSHOP</p>
-              <h1>LET'S MAKE A <br> BETTER <span>PLANET</span></h1>
+              <h1>LET'S MAKE A BETTER <span>PLANET</span></h1>
               <p class="description">
                 We are an online plant shop offering a wide range of cheap and trendy plants.
                 Use our plants to create an unique Urban Jungle. Order your favorite plants!
               </p>
               <a class="btn" href="#">SHOP NOW</a>
           </div>
-    
           <div class="image-box">
              <img src="images/plants.png" alt="Plants">
           </div>
         </section>
+
+        <section class="shop clearfix">        
+            <aside class="sidebar">
+                <h3>Categories</h3>
+                <ul>
+                    <li><a class="active" href="#">House Plants</a></li>
+                    <li><a href="#">Potter Plants</a></li>
+                    <li><a href="#">Seeds</a></li>
+                    <li><a href="#">Small Plants</a></li>
+                    <li><a href="#">Big Plants</a></li>
+                    <li><a href="#">Succulents</a></li>
+                    <li><a href="#">Terrariums</a></li>
+                    <li><a href="#">Gardening</a></li>
+                    <li><a href="#">Accessories</a></li>
+                </ul>       
+                <div class="sale">
+                    <a href="#">
+                      <img src="images/sale.png" alt="Sale">
+                    </a>
+                </div>
+            </aside>
+            <section class="products">       
+                <div class="products-header clearfix">
+                    <div class="tabs">
+                        <a class="active" href="#">All Plants</a>
+                        <a href="#">New Arrivals</a>
+                        <a href="#">Sale</a>
+                    </div>       
+                    <div class="sort">
+                        <label for="sort">Short by:</label>
+                    
+                        <div class="select-wrapper">
+                            <select id="sort">
+                                <option>Default sorting</option>
+                                <option>Price: low to high</option>
+                                <option>Price: high to low</option>
+                            </select>
+                    
+                            <img src="images/arrow.svg" alt="" class="arrow">
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-list">
+                    <div class="card">
+                        <img src="images/1.png" alt="">
+                        <p>Barberton Daisy</p>
+                        <span>$119.00</span>
+                    </div>
+                </div>       
+                <!-- PAGINATION -->
+                <div class="pagination">
+                    <a class="active" href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">></a>
+                </div>
+            </section>
+        </section>
+
+
     </main>
 </body>
 </html>
