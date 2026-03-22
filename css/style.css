@@ -90,7 +90,7 @@ body {
 .nav .active {
     font-weight: bold;
     border-bottom: 3px solid #46A358;
-    
+    pointer-events: none;
 }
 
 /* Main */
@@ -194,6 +194,7 @@ button {
 .sidebar {
     width: 250px;
     float: left;
+    background: #f5f5f5;
 }
 
 .sidebar h3 {
@@ -316,6 +317,7 @@ button {
 .card img {
     max-width: 100%;
     height: auto;
+    background: #f5f5f5;
 }
 
 .card p {
