@@ -1,6 +1,7 @@
 @font-face {
     font-family: 'Cera Pro';
-    src: url('../fonts/CeraPro-Regular.woff') format('woff');
+    src: url(../fonts/СeraPro/CeraPro-Regular.woff2) format('woff2'),
+         url(../fonts/СeraPro/CeraPro-Regular.woff) format('woff');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -8,7 +9,8 @@
 
 @font-face {
     font-family: 'Cera Pro';
-    src: url('../fonts/CeraPro-Medium.woff') format('woff');
+    src: url(../fonts/СeraPro/CeraPro-Medium.woff2) format('woff2'),
+         url(../fonts/СeraPro/CeraPro-Medium.woff) format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -16,7 +18,8 @@
 
 @font-face {
     font-family: 'Cera Pro';
-    src: url('../fonts/CeraPro-Bold.woff') format('woff');
+    src: url(../fonts/СeraPro/CeraPro-Bold.woff2) format('woff2'),
+         url(../fonts/СeraPro/CeraPro-Bold.woff) format('woff');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -204,16 +207,16 @@ button {
 }
 
 .sidebar li {
-    margin: 10px 0;
+    margin: 24px 0;
 }
 
 .sidebar a {
     text-decoration: none;
     color: #3d3d3d;
     display: block;
+    padding-left: 15px;
     transition: 0.3s;
     font-size: 15px;
-    font-weight: 400;
 }
 
 .sidebar a:hover {
@@ -222,7 +225,7 @@ button {
 
 .sidebar a.active {
     color: #46A358;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .sale img {
@@ -249,11 +252,14 @@ button {
     margin-right: 20px;
     text-decoration: none;
     color: #3d3d3d;
+    padding-bottom: 5px;
 }
 
 .tabs a.active {
     color: #46A358;
     border-bottom: 2px solid #46A358;
+    pointer-events: none;
+    font-weight: bold;
 }
 
 .tabs a:hover {
@@ -286,17 +292,7 @@ button {
     top: 50%;
     transform: translateY(-50%);
     width: 10px;
-
     pointer-events: none;
-}
-
-
-
-/* очистка */
-.products-header::after {
-    content: "";
-    display: block;
-    clear: both;
 }
 
 /* ===== CARDS ===== */
@@ -308,8 +304,6 @@ button {
     width: 30%;
     display: inline-block;
     margin: 1.5%;
-    background: #fbfbfb;
-    text-align: center;
     font-size: 16px;
     padding: 15px;
     transition: 0.3s;
@@ -354,6 +348,7 @@ button {
     background: #46A358;
     color: white;
     border-color: #46A358;
+    pointer-events: none;
 }
 
 .pagination a:hover {
