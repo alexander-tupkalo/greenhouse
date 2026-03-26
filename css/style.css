@@ -87,6 +87,7 @@ body {
 
 /* Hero */
 .hero {
+    display: flex;
     background-color: #f5f5f5;
     padding: 40px 0;
     font-size: 0;
@@ -94,8 +95,8 @@ body {
 
 .content,
 .image-box {
-    display: inline-block;
-    vertical-align: top;
+  /*  display: inline-block;
+    vertical-align: top; */
     font-size: 16px;
 }
 
@@ -107,11 +108,11 @@ body {
 
 .image-box {
     width: 50%; 
-    text-align: center;
+ /*   text-align: center; */
 }
 
 .image-box img {
-    display: block;
+   /* display: block; */
     max-width: 100%;
     height: auto;
 }
@@ -348,22 +349,22 @@ button {
 .banner {
     display: flex;
     align-items: center;
-   /* background: #f5f5f5; */
-    /* padding: 20px; */
+    background: #f5f5f5; 
+    padding: 10px;
     flex: 1;
 }
 
 .banner img {
   /*  width: 150px; */
-  margin-top: 52px;
+  margin-top: -52px;
 }
 
 .banner-content {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    margin-right: 30px;
-    margin-bottom: -62px;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    margin-left: auto;
 }
 
 .banner-content h3 {
@@ -398,13 +399,14 @@ button {
 /* список */
 .blog-list {
     display: flex;
-    gap: 42px;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    
 }
 
 /* карточка */
 .post {
-    width: 23%;
+    flex: 1 1 calc(25% - 30px);
     background: #fbfbfb;
     text-align: left;
     transition: 0.3s;
@@ -472,11 +474,6 @@ button {
     margin-left: 10px;
 }
 
-/* активный */
-.read-more.active {
-    color: #46A358;
-    pointer-events: none;
-}
 
 
 /*------------------------------------------------------------------*/
