@@ -31,69 +31,54 @@ body {
     padding: 20px;
 }
 
-/* Header */
 .header {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.container {
     max-width: 1200px;
-    width: 100%;
     margin: 0 auto;
-   /* padding: 10px 0; */
-    border-bottom: 1px solid #eee;
-    font-size: 0;
 }
 
-.logo,
-.nav,
-.login {
-    display: inline-block;
-    vertical-align: middle;
-    font-size: 16px;
-    font-weight: 400;
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
 }
 
-.logo {
-    width: 200px;
+.logo img {
+    height: 30px;
 }
 
-.nav {
-    width: 700px;
-    text-align: center;
-}
-
-.login {
-    width: 200px;
-    text-align: right;
-}
-
-/* NAV */
 .nav ul {
+    display: flex;
+    gap: 40px;
+
+    list-style: none;
     margin: 0;
     padding: 0;
-    list-style: none;
-}
-
-.nav li {
-    display: inline-block;
-    margin: 0 15px;
 }
 
 .nav a {
-    display: inline-block;
-    padding: 25px 0;
     text-decoration: none;
-    color: #333;
+    color: #3d3d3d;
+    font-size: 16px;
+    padding-bottom: 5px;
+    transition: 0.3s;
 }
 
 .nav a:hover {
     color: #46A358;
 }
 
-.nav .active {
-    font-weight: bold;
-    border-bottom: 3px solid #46A358;
+.nav a.active {
+    color: #46A358;
+    border-bottom: 2px solid #46A358;
     pointer-events: none;
 }
 
-/* Main */
+
 .main {
     max-width: 1200px;
     width: 100%;
@@ -167,7 +152,6 @@ h1 span {
     text-decoration: none;
     border: none;
     cursor: pointer;
-    font-weight: 700;
     font-size: 16px;
 }
 
@@ -305,7 +289,6 @@ button {
 .card {
     width: calc(33.333% - 20px);
     background: #fbfbfb;
-    text-align: center;
     padding: 15px;
     transition: 0.3s;
 }
