@@ -298,36 +298,6 @@ button {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-.card img {
-    width: 100%;
-}
-
-.card p {
-    margin: 10px 0 5px;
-}
-
-/* .card span {
-    color: #46A358;
-    font-weight: bold;
-}  */
-
-.product-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-}
-
-.card {
-    width: calc(33.333% - 20px);
-    background: #fbfbfb;
-    padding: 15px;
-    transition: 0.3s;
-}
-
-.card:hover {
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
 .card-img {
     position: relative;
     overflow: hidden;
@@ -358,7 +328,7 @@ button {
     transition: 0.3s;
 }
 
-.card-icons a {
+.card-icons button {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -416,11 +386,7 @@ button {
 .card-icons a {
     transition: 0.3s;
 }
-/* 
-.card-icons a:hover {
-    background: none;
-    transform: scale(1.1);
-} */
+
 .card-icons a:hover img {
     filter: invert(48%) sepia(24%) saturate(600%) hue-rotate(70deg);
 }
