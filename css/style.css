@@ -344,7 +344,7 @@ button {
 
 .card-icons {
     position: absolute;
-    bottom: 5px;
+    bottom: 2px;
     left: 50%;
     transform: translate(-50%, 10px);
     display: flex;
@@ -354,9 +354,10 @@ button {
 }
 
 .card-icons button {
-    width: 20px;
-    height: 20px;
+    width: 35px;
+    height: 35px;
     background: #fff;
+    border-radius: 4px;
     border: none;
     display: flex;
     align-items: center;
