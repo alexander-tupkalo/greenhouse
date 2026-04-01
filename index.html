@@ -10,24 +10,22 @@
 <body>
 
     <header class="header">
-        <div class="logo">
-            <img src="images/logo.svg" alt="GREENSHOP">
-        </div>
-    
-        <nav class="nav">
-            <ul>
-                <li><a class="active" href="#">Home</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Plant Care</a></li>
-                <li><a href="#">Blogs</a></li>
-            </ul>
-        </nav>
-    
-        <div class="login">
+        <div class="container header-inner">
+            <div class="logo">
+                <img src="images/logo.svg" alt="Greenshop">
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a class="active" href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Plant Care</a></li>
+                    <li><a href="#">Blogs</a></li>
+                </ul>
+            </nav>
             <a href="registration.html" class="btn">Login</a>
         </div>
     </header>
-    
+
     <main class="main">
         <section class="hero">
           <div class="content">
@@ -44,7 +42,7 @@
           </div>
         </section>
 
-        <section class="shop clearfix">        
+        <section class="shop">
             <aside class="sidebar">
                 <h3>Categories</h3>
                 <ul>
@@ -57,52 +55,244 @@
                     <li><a href="#">Terrariums</a></li>
                     <li><a href="#">Gardening</a></li>
                     <li><a href="#">Accessories</a></li>
-                </ul>       
+                </ul>
                 <div class="sale">
-                    <a href="#">
-                      <img src="images/sale.png" alt="Sale">
-                    </a>
+                    <img src="images/sale.png" alt="">
                 </div>
             </aside>
-            <section class="products">       
-                <div class="products-header clearfix">
+        
+            <section class="products">
+                <div class="products-header">
                     <div class="tabs">
                         <a class="active" href="#">All Plants</a>
                         <a href="#">New Arrivals</a>
                         <a href="#">Sale</a>
-                    </div>       
+                    </div>
                     <div class="sort">
-                        <label for="sort">Short by:</label>
-                    
+                        <label for="sort">Sort by:</label>
+        
                         <div class="select-wrapper">
                             <select id="sort">
                                 <option>Default sorting</option>
                                 <option>Price: low to high</option>
                                 <option>Price: high to low</option>
                             </select>
-                    
-                            <img src="images/arrow.svg" alt="" class="arrow">
+        
+                            <img src="images/arrow.svg" class="arrow" alt="">
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="product-list">
                     <div class="card">
-                        <img src="images/1.png" alt="">
+                        <div class="card-img">
+                            <img src="images/card1.png" alt="">
+                            <div class="card-icons">
+                                <button type="button"><img src="images/basket.svg" alt=""></button>
+                                <button type="button"><img src="images/heart.svg" alt=""></button>
+                                <button type="button"><img src="images/search.svg" alt=""></button>
+                            </div>
+                        </div>          
                         <p>Barberton Daisy</p>
-                        <span>$119.00</span>
+                        <span class="price">$119.00</span>
                     </div>
-                </div>       
-                <!-- PAGINATION -->
+                
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="images/card2.png" alt="">             
+                            <div class="card-icons">
+                                <button type="button"><img src="images/basket.svg" alt=""></button>
+                                <button type="button"><img src="images/heart.svg" alt=""></button>
+                                <button type="button"><img src="images/search.svg" alt=""></button>
+                            </div>
+                        </div>               
+                        <p>Angel Wing Begonia</p>
+                        <span class="price">$169.00</span>
+                    </div>
+                
+                    <div class="card">
+                        <div class="card-img">               
+                            <span class="badge">13% OFF</span>               
+                            <img src="images/card3.png" alt="">                
+                            <div class="card-icons">
+                                <button type="button"><img src="images/basket.svg" alt=""></button>
+                                <button type="button"><img src="images/heart.svg" alt=""></button>
+                                <button type="button"><img src="images/search.svg" alt=""></button>
+                            </div>
+                        </div>               
+                        <p>African Violet</p>               
+                        <div class="price-box">
+                            <span class="price">$199.00</span>
+                            <span class="old-price">$229.00</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="images/card1.png" alt="">
+                            <div class="card-icons">
+                                <button type="button"><img src="images/basket.svg" alt=""></button>
+                                <button type="button"><img src="images/heart.svg" alt=""></button>
+                                <button type="button"><img src="images/search.svg" alt=""></button>
+                            </div>
+                        </div>
+                        <p>Barberton Daisy</p>
+                        <span class="price">$119.00</span>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="images/card2.png" alt="">
+                            <div class="card-icons">
+                                <button type="button"><img src="images/basket.svg" alt=""></button>
+                                <button type="button"><img src="images/heart.svg" alt=""></button>
+                                <button type="button"><img src="images/search.svg" alt=""></button>
+                            </div>
+                        </div>
+                        <p>Angel Wing Begonia</p>
+                        <span class="price">$169.00</span>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="images/card1.png" alt="">
+                            <div class="card-icons">
+                                <button type="button"><img src="images/basket.svg" alt=""></button>
+                                <button type="button"><img src="images/heart.svg" alt=""></button>
+                                <button type="button"><img src="images/search.svg" alt=""></button>
+                            </div>
+                        </div>
+                        <p>Barberton Daisy</p>
+                        <span class="price">$119.00</span>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="images/card2.png" alt="">
+                            <div class="card-icons">
+                                <button type="button"><img src="images/basket.svg" alt=""></button>
+                                <button type="button"><img src="images/heart.svg" alt=""></button>
+                                <button type="button"><img src="images/search.svg" alt=""></button>
+                            </div>
+                        </div>
+                        <p>Angel Wing Begonia</p>
+                        <span class="price">$169.00</span>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="images/card1.png" alt="">
+                            <div class="card-icons">
+                                <button type="button"><img src="images/basket.svg" alt=""></button>
+                                <button type="button"><img src="images/heart.svg" alt=""></button>
+                                <button type="button"><img src="images/search.svg" alt=""></button>
+                            </div>
+                        </div>
+                        <p>Barberton Daisy</p>
+                        <span class="price">$119.00</span>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="images/card2.png" alt="">
+                            <div class="card-icons">
+                                <button type="button"><img src="images/basket.svg" alt=""></button>
+                                <button type="button"><img src="images/heart.svg" alt=""></button>
+                                <button type="button"><img src="images/search.svg" alt=""></button>
+                            </div>
+                        </div>
+                        <p>Angel Wing Begonia</p>
+                        <span class="price">$169.00</span>
+                    </div>
+                </div>
                 <div class="pagination">
                     <a class="active" href="#">1</a>
                     <a href="#">2</a>
                     <a href="#">3</a>
                     <a href="#">4</a>
                     <a href="#">></a>
-                </div>
+                </div> 
             </section>
+        
         </section>
+
+        <section class="blog">
+            <div class="banners">
+                <div class="banner">
+                    <img src="images/banner1.png" alt="">
+                    <div class="banner-content">
+                        <h3>SUMMER CACTUS<br>& SUCCULENTS</h3>
+                        <p>We are an online plant shop offering a wide range of cheap and trendy plants</p>
+                        <a href="#" class="btn">Find More →</a>
+                    </div>
+                </div>
+                <div class="banner">
+                    <img src="images/banner2.png" alt="">
+                    <div class="banner-content">
+                        <h3>STYLING TRENDS<br>& MUCH MORE</h3>
+                        <p>We are an online plant shop offering a wide range of cheap and trendy plants</p>
+                        <a href="#" class="btn">Find More →</a>
+                    </div>
+                </div>
+            </div>
+            <h2>Our Blog Posts</h2>
+            <p class="blog-subtitle">
+                We are an online plant shop offering a wide range of cheap and trendy plants.
+            </p>
+            <div class="blog-list">
+                <div class="post">
+                    <img src="images/blog1.png" alt="">
+        
+                    <div class="post-content">
+                        <time datetime="2025-09-12">
+                            September 12 | Read in 6 minutes
+                        </time>
+                        <h3>Cactus & Succulent Care Tips</h3>
+                        <p>
+                            Cacti are succulents are easy care plants for any home or patio.
+                        </p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+                <div class="post">
+                    <img src="images/blog2.png" alt="">
+                    <div class="post-content">
+                        <time datetime="2025-09-13">
+                            September 13 | Read in 2 minutes
+                        </time>
+                        <h3>Top 10 Succulents for Your Home</h3>
+                        <p>
+                            Best in hanging baskets. Prefers medium to high light.
+                        </p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+                <div class="post">
+                    <img src="images/blog3.png" alt="">
+                    <div class="post-content">
+                        <time datetime="2025-09-15">
+                            September 15 | Read in 5 minutes
+                        </time>
+                        <h3>Cacti & Succulent Care Tips</h3>
+                        <p>
+                            Cacti and succulents thrive in containers and because most are...
+                        </p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+                <div class="post">
+                    <img src="images/blog4.png" alt="">
+                    <div class="post-content">
+                        <time datetime="2025-09-15">
+                            September 15 | Read in 2 minutes
+                        </time>
+                        <h3>Best Houseplants Room By Room</h3>
+                        <p>
+                            The benefits of houseplants are endless. In addition to...
+                        </p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+        
+            </div>
+        </section> 
 
 
     </main>
