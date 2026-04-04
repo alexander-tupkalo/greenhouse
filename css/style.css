@@ -942,7 +942,7 @@ button {
 }
 
 .footer-col a {
-    display: block;
+    display: inline-block;
     color: #727272;
     text-decoration: none;
     margin-bottom: 6px;
