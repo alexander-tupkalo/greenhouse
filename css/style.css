@@ -386,7 +386,7 @@ h1 span {
     display: inline-block;
     background-color: #46A358;
     color: white;
-    padding: 8px 30px;
+    padding: 8px 25px;
     border-radius: 6px;
     text-decoration: none;
     border: none;
@@ -400,6 +400,10 @@ h1 span {
 
 button {
     font-family: inherit;
+}
+
+.icon-arrow-right1 {
+    
 }
 
 .shop {
@@ -605,14 +609,28 @@ button {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.card-icons img {
+.card-icons i {
+    font-size: 18px;
+    color: #3d3d3d;
+    transition: 0.3s;
+}
+
+.card-icons button:hover i {
+    color: #46A358;
+}
+
+.card-icons button:hover {
+    transform: scale(1.1);
+}
+
+/*.card-icons img {
     width: 18px;
     transition: 0.3s;
 }
 
 .card-icons button:hover img {
     filter: invert(48%) sepia(24%) saturate(600%) hue-rotate(70deg);
-}
+} */
 
 .card-icons button:hover {
     transform: scale(1.1);
@@ -693,7 +711,6 @@ button {
 }
 
 .banner img {
-  /*  width: 150px; */
   margin-top: -52px;
 }
 
@@ -784,7 +801,8 @@ button {
 }
 
 .read-more::after {
-    content: "→";
+    content: "\e90d";
+    font-family: 'icomoon' !important;
     margin-left: 5px;
     transition: 0.3s;
 }
