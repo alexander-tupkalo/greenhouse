@@ -25,6 +25,102 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'icomoon';
+    src: url(../images/icons/icomoon.eot?3o0wkp);
+    src: url(../images/icons/icomoon.eot?3o0wkp#iefix) format('embedded-opentype'),
+        url(../images/icons/icomoon.ttf?3o0wkp) format('truetype'),
+        url(../images/icons/icomoon.woff?3o0wkp) format('woff'),
+        url(..images/icons/icomoon.svg?3o0wkp#icomoon) format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-right1:before {
+    content: "\e90d";
+}
+
+.icon-location:before {
+    content: "\e905";
+}
+
+.icon-phone:before {
+    content: "\e906";
+}
+
+.icon-logout:before {
+    content: "\e90c";
+}
+
+.icon-arrow-right:before {
+    content: "\e909";
+}
+
+.icon-youtube:before {
+    content: "\e904";
+}
+
+.icon-phone:before {
+    content: "\e906";
+}
+
+.icon-logout:before {
+    content: "\e90c";
+}
+
+.icon-arrow-right:before {
+    content: "\e909";
+}
+
+.icon-basket:before {
+    content: "\e90b";
+}
+
+.icon-heart:before {
+    content: "\e907";
+}
+
+.icon-search:before {
+    content: "\e908";
+}
+
+.icon-linkedin:before {
+    content: "\e900";
+}
+
+.icon-twitter:before {
+    content: "\e901";
+}
+
+.icon-instagram:before {
+    content: "\e902";
+}
+
+.icon-facebook:before {
+    content: "\e903";
+}
+
+.icon-mail:before {
+    content: "\e90a";
+}
+
 body {
     font-family: 'Cera Pro', sans-serif;
     margin: 0;
@@ -163,17 +259,18 @@ body {
 }
 
 .arrow-right::after {
-    content: "";
-    width: 6px;
+    content: "\e909";
+    font-family: 'icomoon' !important;
+   /* width: 6px;
     height: 6px;
     border-right: 2px solid #3d3d3d;
     border-bottom: 2px solid #3d3d3d;
-    transform: rotate(-45deg);
+    transform: rotate(-45deg); */
     transition: 0.25s;
 }
 
 .submenu:hover > a.arrow-right::after {
-    transform: rotate(135deg);
+    transform: rotate(180deg);
 }
 
 .dropdown li:hover > a.arrow-right::after {
@@ -277,6 +374,11 @@ h1 span {
     color: #727272;
     line-height: 1.6;
     margin: 20px 0;
+}
+
+.icon-logout {
+    content: "\e90c";
+    font-family: 'icomoon' !important;
 }
 
 /* Button */
@@ -954,7 +1056,6 @@ button {
     padding: 6px 8px;
     border-radius: 6px;
     width: 100%;
-    
     color: #3d3d3d;
     text-decoration: none;
     transition: 0.25s ease;
@@ -1027,9 +1128,15 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-
-    border-radius: 4px;
     transition: 0.25s ease;
+    font-size: 18px;
+    color: rgba(70, 163, 88, 0.6);
+    border: 1px solid rgba(70, 163, 88, 0.6);
+    border-radius: 4px;
+}
+
+.social-list .icon-youtube {
+    font-size: 18px;
 }
 
 .social-list img {
