@@ -41,7 +41,7 @@
 [class*=" icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'icomoon' !important;
-    speak: never;
+    speak-as: never;
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
@@ -381,6 +381,80 @@ h1 span {
     font-family: 'icomoon' !important;
 }
 
+/* ===== PRELOADER ===== */
+
+.page-loader {
+    position: fixed;
+    
+    inset: 0;
+    background: linear-gradient(90deg, rgb(70 163 88 / 10%) 0%, #52c36899 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    animation: loaderHide 2s ease forwards;
+}
+
+.loader-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loader-logo {
+    width: 80px;
+    animation: pulse 1.2s ease-in-out infinite;
+}
+
+.page-loader span {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #3d3d3d;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 0.7;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+}
+
+@keyframes loaderHide {
+    0% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.page-content {
+    opacity: 0;
+    transform: translateY(10px);
+    animation: contentShow 2s ease forwards;
+}
+
+@keyframes contentShow {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
 /* Button */
 .btn {
     display: inline-block;
@@ -400,10 +474,6 @@ h1 span {
 
 button {
     font-family: inherit;
-}
-
-.icon-arrow-right1 {
-    
 }
 
 .shop {
@@ -1053,6 +1123,70 @@ button {
     padding: 0 18px;
 }
 
+/*--------------------Checkbox-------------------*/
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: #727272;
+    cursor: pointer;
+    margin: 10px 0 5px;
+}
+
+.custom-checkbox input {
+    position: absolute;
+    opacity: 0;
+}
+
+.checkmark {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #eaeaea;
+    border-radius: 4px;
+    background: #fff;
+    position: relative;
+    transition: 0.25s ease;
+}
+
+.custom-checkbox:hover .checkmark {
+    border-color: #46A358;
+    box-shadow: 0 0 0 3px rgba(70, 163, 88, 0.1);
+}
+
+.checkmark::after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 8px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    top: 2px;
+    left: 5px;
+    transform: rotate(45deg);
+    opacity: 0;
+    transition: 0.2s ease;
+}
+
+.custom-checkbox input:checked+.checkmark {
+    background: #46A358;
+    border-color: #46A358;
+}
+
+.custom-checkbox input:checked+.checkmark::after {
+    opacity: 1;
+}
+
+.custom-checkbox input:focus+.checkmark {
+    outline: 2px solid #46A358;
+    outline-offset: 2px;
+}
+
+.custom-checkbox:active .checkmark {
+    transform: scale(0.95);
+}
+
+/*----------------------------------------------*/
 .footer-middle {
     background: linear-gradient(90deg, #EDF6EF 0%, #52C368 100%);
     padding: 25px 0;
