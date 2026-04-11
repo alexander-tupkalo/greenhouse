@@ -10,21 +10,41 @@
 <body>
 
     <header class="header">
-        <div class="container header-inner">
+        <div class="container header-inner">   
             <div class="logo">
                 <img src="images/logo.svg" alt="Greenshop">
             </div>
             <nav class="nav">
-                <ul>
-                    <li><a class="active" href="#">Home</a></li>
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
                     <li><a href="#">Shop</a></li>
-                    <li><a href="#">Plant Care</a></li>
+                    <li class="dropdown">
+                        <a href="#">Plant Care</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Drainage</a></li>
+                            <li><a href="#">Fungicides</a></li>
+                            <li><a href="#">Fertilizer</a></li>
+                            <li class="submenu">
+                                <a class="arrow-right href="#">
+                                    Priming
+                                </a>
+                                <ul class="submenu-menu">
+                                    <li><a href="#">Universal</a></li>
+                                    <li><a href="#">For Ficus</a></li>
+                                    <li><a href="#">For Cacti</a></li>
+                                    <li><a href="#">For Citrus</a></li>
+                                    <li><a href="#">For those in bloom</a></li>
+                                    <li><a href="#">For Orchids</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
                     <li><a href="#">Blogs</a></li>
                 </ul>
             </nav>
-            <a href="registration.html" class="btn">Login</a>
+            <a href="registration.html" class="btn"><i class="icon-logout"></i> Login</a>
         </div>
-    </header>
+    </header> 
 
     <main class="main">
         <section class="hero">
@@ -88,9 +108,9 @@
                         <div class="card-img">
                             <img src="images/card1.png" alt="">
                             <div class="card-icons">
-                                <button type="button"><img src="images/basket.svg" alt=""></button>
-                                <button type="button"><img src="images/heart.svg" alt=""></button>
-                                <button type="button"><img src="images/search.svg" alt=""></button>
+                                <button type="button"><i class="icon-basket"></i></button>
+                                <button type="button"><i class="icon-heart"></i></button>
+                                <button type="button"><i class="icon-search"></i></button>
                             </div>
                         </div>          
                         <p>Barberton Daisy</p>
@@ -101,9 +121,9 @@
                         <div class="card-img">
                             <img src="images/card2.png" alt="">             
                             <div class="card-icons">
-                                <button type="button"><img src="images/basket.svg" alt=""></button>
-                                <button type="button"><img src="images/heart.svg" alt=""></button>
-                                <button type="button"><img src="images/search.svg" alt=""></button>
+                                <button type="button"><i class="icon-basket"></i></button>
+                                <button type="button"><i class="icon-heart"></i></button>
+                                <button type="button"><i class="icon-search"></i></button>
                             </div>
                         </div>               
                         <p>Angel Wing Begonia</p>
@@ -115,9 +135,9 @@
                             <span class="badge">13% OFF</span>               
                             <img src="images/card3.png" alt="">                
                             <div class="card-icons">
-                                <button type="button"><img src="images/basket.svg" alt=""></button>
-                                <button type="button"><img src="images/heart.svg" alt=""></button>
-                                <button type="button"><img src="images/search.svg" alt=""></button>
+                                <button type="button"><i class="icon-basket"></i></button>
+                                <button type="button"><i class="icon-heart"></i></button>
+                                <button type="button"><i class="icon-search"></i></button>
                             </div>
                         </div>               
                         <p>African Violet</p>               
@@ -130,9 +150,9 @@
                         <div class="card-img">
                             <img src="images/card1.png" alt="">
                             <div class="card-icons">
-                                <button type="button"><img src="images/basket.svg" alt=""></button>
-                                <button type="button"><img src="images/heart.svg" alt=""></button>
-                                <button type="button"><img src="images/search.svg" alt=""></button>
+                                <button type="button"><i class="icon-basket"></i></button>
+                                <button type="button"><i class="icon-heart"></i></button>
+                                <button type="button"><i class="icon-search"></i></button>
                             </div>
                         </div>
                         <p>Barberton Daisy</p>
@@ -143,9 +163,9 @@
                         <div class="card-img">
                             <img src="images/card2.png" alt="">
                             <div class="card-icons">
-                                <button type="button"><img src="images/basket.svg" alt=""></button>
-                                <button type="button"><img src="images/heart.svg" alt=""></button>
-                                <button type="button"><img src="images/search.svg" alt=""></button>
+                                <button type="button"><i class="icon-basket"></i></button>
+                                <button type="button"><i class="icon-heart"></i></button>
+                                <button type="button"><i class="icon-search"></i></button>
                             </div>
                         </div>
                         <p>Angel Wing Begonia</p>
@@ -155,9 +175,9 @@
                         <div class="card-img">
                             <img src="images/card1.png" alt="">
                             <div class="card-icons">
-                                <button type="button"><img src="images/basket.svg" alt=""></button>
-                                <button type="button"><img src="images/heart.svg" alt=""></button>
-                                <button type="button"><img src="images/search.svg" alt=""></button>
+                                <button type="button"><i class="icon-basket"></i></button>
+                                <button type="button"><i class="icon-heart"></i></button>
+                                <button type="button"><i class="icon-search"></i></button>
                             </div>
                         </div>
                         <p>Barberton Daisy</p>
@@ -168,9 +188,9 @@
                         <div class="card-img">
                             <img src="images/card2.png" alt="">
                             <div class="card-icons">
-                                <button type="button"><img src="images/basket.svg" alt=""></button>
-                                <button type="button"><img src="images/heart.svg" alt=""></button>
-                                <button type="button"><img src="images/search.svg" alt=""></button>
+                                <button type="button"><i class="icon-basket"></i></button>
+                                <button type="button"><i class="icon-heart"></i></button>
+                                <button type="button"><i class="icon-search"></i></button>
                             </div>
                         </div>
                         <p>Angel Wing Begonia</p>
@@ -180,9 +200,9 @@
                         <div class="card-img">
                             <img src="images/card1.png" alt="">
                             <div class="card-icons">
-                                <button type="button"><img src="images/basket.svg" alt=""></button>
-                                <button type="button"><img src="images/heart.svg" alt=""></button>
-                                <button type="button"><img src="images/search.svg" alt=""></button>
+                                <button type="button"><i class="icon-basket"></i></button>
+                                <button type="button"><i class="icon-heart"></i></button>
+                                <button type="button"><i class="icon-search"></i></button>
                             </div>
                         </div>
                         <p>Barberton Daisy</p>
@@ -193,9 +213,9 @@
                         <div class="card-img">
                             <img src="images/card2.png" alt="">
                             <div class="card-icons">
-                                <button type="button"><img src="images/basket.svg" alt=""></button>
-                                <button type="button"><img src="images/heart.svg" alt=""></button>
-                                <button type="button"><img src="images/search.svg" alt=""></button>
+                                <button type="button"><i class="icon-basket"></i></button>
+                                <button type="button"><i class="icon-heart"></i></button>
+                                <button type="button"><i class="icon-search"></i></button>
                             </div>
                         </div>
                         <p>Angel Wing Begonia</p>
@@ -207,7 +227,7 @@
                     <a href="#">2</a>
                     <a href="#">3</a>
                     <a href="#">4</a>
-                    <a href="#">></a>
+                    <a href="#"><i class="icon-arrow-right"></i></a>
                 </div> 
             </section>
         
@@ -218,17 +238,17 @@
                 <div class="banner">
                     <img src="images/banner1.png" alt="">
                     <div class="banner-content">
-                        <h3>SUMMER CACTUS<br>& SUCCULENTS</h3>
+                        <h3>SUMMER CACTUS & SUCCULENTS</h3>
                         <p>We are an online plant shop offering a wide range of cheap and trendy plants</p>
-                        <a href="#" class="btn">Find More →</a>
+                        <a href="#" class="btn">Find More <i class="icon-arrow-right1"></i></a>
                     </div>
                 </div>
                 <div class="banner">
                     <img src="images/banner2.png" alt="">
                     <div class="banner-content">
-                        <h3>STYLING TRENDS<br>& MUCH MORE</h3>
+                        <h3>STYLING TRENDS & MUCH MORE</h3>
                         <p>We are an online plant shop offering a wide range of cheap and trendy plants</p>
-                        <a href="#" class="btn">Find More →</a>
+                        <a href="#" class="btn">Find More <i class="icon-arrow-right1"></i></a>
                     </div>
                 </div>
             </div>
@@ -290,11 +310,132 @@
                         <a href="#" class="read-more">Read More</a>
                     </div>
                 </div>
-        
             </div>
-        </section> 
-
-
+        </section>
     </main>
+    <footer class="footer">
+    
+        <div class="footer-top">
+            <div class="container footer-top-inner">
+    
+                <ul class="footer-features">
+                    <li class="feature feature-1">
+                        <h4>Garden Care</h4>
+                        <p>We are an online plant shop offering a wide range of cheap and trendy plants.</p>
+                    </li>
+                    <li class="feature feature-2">
+                        <h4>Plant Renovation</h4>
+                        <p>We are an online plant shop offering a wide range of cheap and trendy plants.</p>
+                    </li>
+                    <li class="feature feature-3">
+                        <h4>Watering Garden</h4>
+                        <p>We are an online plant shop offering a wide range of cheap and trendy plants.</p>
+                    </li>
+                </ul>
+                <div class="newsletter">
+                    <h4>Would you like to join newsletters?</h4>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="enter your email address...">
+                        <button class="btn">Join</button>
+                    </form>
+                    <p>
+                        We usually post offers and challenges in newsletter. 
+                        We’re your online houseplant destination. We offer a wide range of
+                        houseplants and accessories shipped directly from our (green)house to yours!
+                    </p>
+                </div>
+    
+            </div>
+        </div>
+
+        <div class="footer-middle">
+            <div class="container">
+    
+                <ul class="footer-middle-list">
+                    <li class="footer-item logo">
+                        <img src="images/logo.svg" alt="">
+                    </li>
+                    <li class="footer-item">
+                        <a href="https://maps.google.com/?q=70+West+Buckingham+Ave+Farmingdale+NY+11735" target="_blank">
+                            <i class="icon-location"></i>
+                         <!--   <img src="images/location.svg" alt="Location">  -->
+                            <span>70 West Buckingham Ave. Farmingdale, NY 11735</span>
+                        </a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="mailto:contact@greenshop.com">
+                            <i class="icon-mail"></i>
+                          <!-- <img src="images/mail.svg" alt="Email"> -->
+                            <span>contact@greenshop.com</span>
+                        </a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="tel:+8801911717490">
+                            <i class="icon-phone"></i>
+                           <!-- <img src="images/phone.svg" alt="Phone"> -->
+                            <span>+88 01911 717 490</span>
+                        </a>
+                    </li>
+                </ul>
+    
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container footer-bottom-inner">
+        
+                <div class="footer-col">
+                    <h3>My Account</h3>
+                    <ul>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Our stores</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Career</a></li>
+                        <li><a href="#">Specials</a></li>
+                    </ul>
+                </div>
+        
+                <div class="footer-col">
+                    <h3>Help & Guide</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">How to Buy</a></li>
+                        <li><a href="#">Shipping & Delivery</a></li>
+                        <li><a href="#">Product Policy</a></li>
+                        <li><a href="#">How to Return</a></li>
+                    </ul>
+                </div>
+        
+                <div class="footer-col">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="#">House Plants</a></li>
+                        <li><a href="#">Potter Plants</a></li>
+                        <li><a href="#">Seeds</a></li>
+                        <li><a href="#">Small Plants</a></li>
+                        <li><a href="#">Accessories</a></li>
+                    </ul>
+                </div>
+        
+                <div class="footer-col">
+                    <h3>Social Media</h3>
+                    <ul class="social-list">
+                        <li><a href="#" target="_blank"><i class="icon-facebook"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="icon-linkedin"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="icon-instagram"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="icon-twitter"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="icon-youtube"></i></a></li>
+                    </ul>
+                    <h3 class="payments-title">We accept</h3>
+                    <div class="payments">
+                        <img src="images/pay.png" alt="Payments">
+                    </div>
+                </div>
+            </div>
+            <p class="copyright">
+                © 2021 GreenShop. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
 </body>
 </html>
