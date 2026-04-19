@@ -1542,15 +1542,8 @@ button {
         justify-content: space-between;
     }
     
-    .feature {
-       /* align-items: flex-start; */
-        padding: 0;
-        gap: 5px;
-       /* text-align: center; */
-    }
-    
     .newsletter {
-        max-width: 50%;
+        max-width: 300px;
         align-self: center;
         padding: 0px;
         text-align: center;
