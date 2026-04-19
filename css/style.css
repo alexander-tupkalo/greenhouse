@@ -1200,6 +1200,7 @@ button {
     background: #fff;
     position: relative;
     transition: 0.25s ease;
+    flex-shrink: 0;
 }
 
 .custom-checkbox:hover .checkmark {
@@ -1636,7 +1637,7 @@ button {
     }
 
     .menu a:hover {
-        background: rgba(255, 255, 255, 0.3);
+        background: rgb(70 163 88);
     }
 
     .dropdown-menu,
@@ -1774,11 +1775,6 @@ button {
         width: 100%;
         border-radius: 6px;
         padding: 10px;
-    }
-
-    .custom-checkbox {
-        display: flex;
-        flex-direction: column;
     }
 
     .footer-middle-list {
