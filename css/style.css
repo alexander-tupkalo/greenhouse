@@ -1179,7 +1179,7 @@ button {
 /*--------------------Checkbox-------------------*/
 .custom-checkbox {
     display: flex;
-    align-items: center;
+   /* align-items: center; */
     gap: 8px;
     font-size: 13px;
     color: #727272;
@@ -1607,7 +1607,7 @@ button {
         top: 100%;
         left: 0;
         width: 100%;
-        background: rgb(70 163 88 / 98%);
+        background: #46a358;
         transform: translateY(-20px);
         opacity: 0;
         max-height: 0;
@@ -1618,7 +1618,7 @@ button {
     .nav.open {
         transform: translateY(0);
         opacity: 1;
-        max-height: 600px;
+        max-height: 750px;
     }
 
     .menu {
@@ -1630,7 +1630,7 @@ button {
     .menu a {
         display: block;
         padding: 14px 10px;
-        color: #fff;
+        color: #3d3d3d;
         font-size: 16px;
         border-right: 6px;
     }
@@ -1643,7 +1643,7 @@ button {
     .submenu-menu {
         position: static;
         display: none;
-        background: rgba(0, 0, 0, 0.1);
+       /* background: rgba(0, 0, 0, 0.1); */
         margin-left: 10px;
         padding-left: 10px;
     }
@@ -1774,6 +1774,11 @@ button {
         width: 100%;
         border-radius: 6px;
         padding: 10px;
+    }
+
+    .custom-checkbox {
+        display: flex;
+        flex-direction: column;
     }
 
     .footer-middle-list {
