@@ -79,6 +79,7 @@
 
 .icon-phone:before {
     content: "\e906";
+    vertical-align: middle;
 }
 
 .icon-logout:before {
@@ -119,6 +120,7 @@
 
 .icon-mail:before {
     content: "\e90a";
+    vertical-align: middle;
 }
 
 body {
@@ -502,6 +504,11 @@ h1 span {
 
 button {
     font-family: inherit;
+}
+
+.btn i {
+    vertical-align: bottom;
+    line-height: 1;
 }
 
 .shop {
@@ -905,6 +912,7 @@ button {
     font-family: 'icomoon' !important;
     margin-left: 5px;
     transition: 0.3s;
+    vertical-align: bottom;
 }
 
 .read-more:hover {
@@ -1456,6 +1464,7 @@ button {
     .content,
     .image-box {
         width: 100%;
+        padding: 20px 20px;
     }
 
     h1 {
@@ -1534,13 +1543,16 @@ button {
     }
     
     .feature {
-        align-items: center;
-        text-align: center;
+       /* align-items: flex-start; */
+        padding: 0;
+        gap: 5px;
+       /* text-align: center; */
     }
     
     .newsletter {
-        max-width: 100%;
-        padding: 0;
+        max-width: 50%;
+        align-self: center;
+        padding: 0px;
         text-align: center;
     }
 
@@ -1562,8 +1574,29 @@ button {
     .footer-item span {
         max-width: none;
     }
+    
+    .footer-col h3 {
+        text-align: center;
+    }
+
+    .footer-col ul {
+        text-align: center;
+    }
 }
 
+/* ================= 890px ================ */
+@media (max-width: 890px) {
+    .social-list {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .payments {
+        display: flex;
+        justify-content: center;
+    }
+}
 
 /* ================= 768px ================= */
 @media (max-width: 768px) {
@@ -1628,6 +1661,18 @@ button {
 
     .submenu.open .submenu-menu {
         display: block;
+    }
+
+    .sidebar ul {
+        overflow-x: auto;
+        white-space: normal;
+        scroll-behavior: smooth;
+        gap: 20px;
+    }
+    
+    .sidebar li {
+        flex: 0 0 auto;
+        margin: 0;
     }
 
     .products-header {
@@ -1703,15 +1748,22 @@ button {
 
     .footer-features {
         flex-direction: column;
+        gap: 10px;
     }
 
     .feature {
         align-items: center;
         text-align: center;
+        padding: 5px 10px;
+    }
+
+    .feature h4 {
+        margin: 0;
     }
 
     .newsletter {
         width: 100%;
+        padding: 40px;
     }
 
     .newsletter-form {
@@ -1728,6 +1780,7 @@ button {
     .newsletter-form button {
         width: 100%;
         border-radius: 6px;
+        padding: 10px;
     }
 
     .footer-middle-list {
